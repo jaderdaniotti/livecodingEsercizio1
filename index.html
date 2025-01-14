@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Antic+Didone&family=Bebas+Neue&family=Farsan&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <div class="d-flex justify-content-center align-items-center gap-5">
+        <div class="form-container">
+        <form id="expenseForm">
+        <h1>Aggiungi Spesa</h1>
+        <input id="expenseDescription" type="text" placeholder="Descrizione..."
+        required />
+        <input id="expenseAmount" type="number" step="0.01" placeholder="Importo
+        (€)" required />
+        <select id="expenseCategory">
+        <option value="cibo">Cibo</option>
+        <option value="trasporti">Trasporti</option>
+        <option value="intrattenimento">Intrattenimento</option>
+        <option value="altro">Altro</option>
+        </select>
+        <button type="submit" id="submitButton" class="">Aggiungi</button>
+        </form>
+        </div>
+        <div class="table-container">
+        <table class="table">
+        <thead>
+        <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Descrizione</th>
+        <th scope="col">Importo (€)</th>
+        <th scope="col">Categoria</th>
+        <th scope="col" style="min-width: 50px;">Modifica</th>
+        <th scope="col" style="min-width: 50px;">Elimina</th>
+        </tr>
+        </thead>
+        <tbody id="tbodyExpense">
+
+        </tbody>
+        </table>
+        <div class="mt-3">
+        <h3>Totale: €<span id="totalAmount">0.00</span></h3>
+        </div>
+        </div>
+        </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+</body>
+</html>
